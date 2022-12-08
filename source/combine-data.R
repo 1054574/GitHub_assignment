@@ -3,9 +3,6 @@ current_path = rstudioapi::getActiveDocumentContext()$path
 setwd(dirname(current_path))
 setwd("..")
 
-setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
-setwd("..")
-
 melb_df <- read.table(
   file = "data/melbourne.csv",
   header = TRUE,
